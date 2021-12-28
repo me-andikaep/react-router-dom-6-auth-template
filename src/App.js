@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Router, useLocation, useRoutes } from 'react-router-dom';
+// import Routes from './configs/routes';
+import { Routes2 } from './configs/Routes2';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const token = true;
+
+	// let element = useRoutes(Routes(token));
+	return (
+		<div className='App'>
+			<div style={{ width: '100%', height: '80px', backgroundColor: 'azure' }}>
+				Header
+			</div>
+			{/* <div>{element}</div> */}
+			<Routes2 token={token} />
+		</div>
+	);
 }
 
 export default App;
